@@ -1,3 +1,13 @@
+@font-face {
+  font-family: 'Pacific Regular';
+  src: url('./fonts/Pacifico-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Montserrat Regular';
+  src: url('./fonts/Montserrat-Regular.ttf');
+}
+
 body {
   margin: 0;
 }
@@ -9,14 +19,56 @@ header {
   background-color: #FEFDFC;
   height: 80px;
   width: 100%;
+  padding: 0 2rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-/* .logo {
-  font-family: ;
-} */
+.logo {
+  font-family: 'Pacific Regular';
+  color: #8B4513;
+  line-height: 1.4;
+  font-size: 18px;
+}
+
+
+.header_links {
+  display: flex;
+  gap: 18px;
+}
+
+.header_links a{
+  text-decoration: none;
+  font-family:'Montserrat Regular', sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  color: black;
+}
+
+.header_links a:hover {
+  color: #8B4513;
+}
+
+.contact {
+  font-family:'Montserrat Regular', sans-serif;
+  font-size: 18px;
+  background-color: #8B4513;
+  padding: 0.5rem 1rem;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.contact img {
+  height: 15px;
+  width: 15px;
+}
+
+.contact:hover {
+  opacity: 0.9;
+}
 
 /* Стили для блока с банером */
 .banner {
