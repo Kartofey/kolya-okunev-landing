@@ -15,6 +15,7 @@ body {
 /* Стили для блока header */
 header {
   position: sticky;
+  box-sizing: border-box;
   top: 0;
   background-color: #FEFDFC;
   height: 80px;
@@ -27,11 +28,10 @@ header {
 
 .logo {
   font-family: 'Pacific Regular';
-  color: #8B4513;
+  color: rgb(139 69 19);
   line-height: 1.4;
   font-size: 18px;
 }
-
 
 .header_links {
   display: flex;
@@ -47,13 +47,13 @@ header {
 }
 
 .header_links a:hover {
-  color: #8B4513;
+  color: rgb(139 69 19);
 }
 
 .contact {
   font-family:'Montserrat Regular', sans-serif;
   font-size: 18px;
-  background-color: #8B4513;
+  background-color: rgb(139 69 19);
   padding: 0.5rem 1rem;
   color: white;
   border: none;
@@ -62,8 +62,8 @@ header {
 }
 
 .contact img {
-  height: 15px;
-  width: 15px;
+  height: 14px;
+  width: 14px;
 }
 
 .contact:hover {
@@ -72,6 +72,34 @@ header {
 
 /* Стили для блока с банером */
 .banner {
+  position: relative;
   background-color: #F5EBE0;
   height: 864px;
+  font-family:'Montserrat Regular', sans-serif;
+}
+
+.hero-text {
+  position: absolute;
+  top: 4rem;
+  left: 4rem;
+  font-size: 1.5rem;
+  color: rgb(91 58 41 / 80%);
+}
+
+.squares {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+}
+
+.squares_left {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+}
+
+.squares_right {
+  width: 100px;
+  height: 100px;
+  background-color: red;
 }
