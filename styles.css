@@ -6,6 +6,25 @@
 @font-face {
   font-family: 'Montserrat Regular';
   src: url('./fonts/Montserrat-Regular.ttf');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Montserrat Regular';
+  src: url('./fonts/Montserrat-Medium.ttf');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Montserrat Regular';
+  src: url('./fonts/Montserrat-SemiBold.ttf');
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'Montserrat Regular';
+  src: url('./fonts/Montserrat-Bold.ttf');
+  font-weight: 700;
 }
 
 body {
@@ -40,25 +59,26 @@ header {
   justify-content: space-between;
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .logo {
   font-family: 'Pacific Regular';
   color: rgb(139 69 19);
   line-height: 1.4;
-  font-size: 18px;
+  font-size: 20px;
 }
 
 .header_links {
   display: flex;
-  gap: 18px;
+  gap: 22px;
 }
 
 .header_links a{
   text-decoration: none;
-  font-family:inherit;
+  font-family: inherit;
+  font-weight: 500;
   font-size: 13px;
-  font-weight: 600;
   color: black;
 }
 
@@ -81,7 +101,7 @@ header {
 .banner {
   position: relative;
   background-color: #F5EBE0;
-  height: 864px;
+  height: 543px;
   font-family:inherit;
   overflow: hidden;
 }
@@ -92,10 +112,6 @@ header {
   left: 3rem;
   font-size: 1.5rem;
   color: rgb(91 58 41 / 80%);
-}
-
-.square {
-  position: relative;
 }
 
 .square_1 {
@@ -197,20 +213,32 @@ header {
 .main_wrapper {
   position: absolute;
   width: 100%;
-}
-
-.main_wrapper__block {
-  position: relative;
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.main_wrapper__block div{
-  color: rgb(91 58 41 / 90%);
+.main_wrapper span{
+  position: absolute;
+  bottom: 20%;
+  color: rgb(91 58 41 / 80%);
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 120px;
 }
 
-.main_wrapper__block img{
+.main_wrapper img{
   position: absolute;
+  right: 18%;
+}
+
+.banner_firstname {
+  left: 2%;
+  z-index: 0;
+}
+
+.banner_secondname {
+  right: 2%;
+  z-index: 0;
 }
