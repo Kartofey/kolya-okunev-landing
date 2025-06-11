@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .first {
+      box-sizing: border-box;
+      display: flex;
+      align-items: center;
+      width: 50%;
+      height: 50px;
+      border: solid;
+      margin: auto;
+      /* overflow: hidden; */
+    }
+    .first div {
+      box-sizing: border-box;
+      position: relative;
+      width: 100%;
+      display: inline-flex;
+      background-color: bisque;
+    }
+    .first h1 {
+      flex-shrink: 0;
+      white-space: nowrap;
+      margin: 0;
+      animation: marquee 20s linear infinite;
+    }
+    .first h1:last-child {
+      position: absolute;
+      /* animation: marquee 20s linear infinite; */
+      animation-delay: 15s;
+      opacity: 0;
+      margin-right: 20px;
+    }
+    @keyframes marquee {
+      0% { 
+        transform: translateX(55%);
+        opacity: 100; 
+      }
+      100% { transform: translateX(-100%); }
+    }
+    /* @keyframes marquee_double {
+      0% { transform: translateX(55%); }
+      100% { transform: translateX(-100%); }
+    } */
+  </style>
+</head>
+<body>
+  <div class="first">
+    <div>
+      <h1>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt obcaecati repudiandae cumque.</h1>
+      <h1>Lorem2 ipsum, dolor sit amet consectetur adipisicing elit. Sunt obcaecati repudiandae cumque.</h1>
+    </div>
+  </div>
+</body>
+</html>

@@ -242,3 +242,56 @@ header {
   right: 2%;
   z-index: 0;
 }
+
+/* Стили для блока с бегущей строкой */
+.marquee {
+  box-sizing: border-box;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+  background-color: #F8EBD4;
+}
+
+@keyframes marquee {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
+
+@keyframes marquee_double {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
+
+.set1 {
+  animation: marquee 20s linear infinite;
+}
+
+.set2 {
+  animation: marquee_double 20s linear infinite;
+  /* animation-delay: 1s; */
+}
+
+.marquee_container {
+  position: relative;
+  display: flex;
+  gap: 3rem;
+  margin: 0 20px;
+  overflow: hidden;
+}
+
+.marquee_content {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  color: rgb(139 69 19);
+  font-size: 1.8rem;
+  font-weight: 600;
+  /* animation: marquee 20s linear infinite;
+  will-change: transform; */
+}
+
+.bullet {
+  width: 0.75rem;
+  height: 0.75rem;
+  border-radius: 10px;
+  background-color: rgb(139 69 19);
+}
