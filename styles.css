@@ -257,21 +257,11 @@ header {
 }
 
 @keyframes marquee_double {
-  0% { transform: translateX(100%); }
-  100% { transform: translateX(-100%); }
-}
-
-.set1 {
-  animation: marquee 20s linear infinite;
-}
-
-.set2 {
-  animation: marquee_double 20s linear infinite;
-  /* animation-delay: 1s; */
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-200%); }
 }
 
 .marquee_container {
-  position: relative;
   display: flex;
   gap: 3rem;
   margin: 0 20px;
@@ -285,8 +275,7 @@ header {
   color: rgb(139 69 19);
   font-size: 1.8rem;
   font-weight: 600;
-  /* animation: marquee 20s linear infinite;
-  will-change: transform; */
+  animation: marquee 20s linear infinite;
 }
 
 .bullet {
@@ -294,4 +283,10 @@ header {
   height: 0.75rem;
   border-radius: 10px;
   background-color: rgb(139 69 19);
+}
+
+.set {
+  animation: marquee_double 20s linear infinite;
+  animation-delay: 10s;
+  background: tan;
 }

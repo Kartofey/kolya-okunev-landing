@@ -15,45 +15,32 @@
       margin: auto;
       /* overflow: hidden; */
     }
-    .first div {
-      box-sizing: border-box;
-      position: relative;
-      width: 100%;
-      display: inline-flex;
-      background-color: bisque;
-    }
-    .first h1 {
-      flex-shrink: 0;
+    .first span {
+      font-size: 2rem;
       white-space: nowrap;
-      margin: 0;
       animation: marquee 20s linear infinite;
+      background: violet;
+      /* animation-delay: -10s; */
     }
-    .first h1:last-child {
-      position: absolute;
-      /* animation: marquee 20s linear infinite; */
-      animation-delay: 15s;
-      opacity: 0;
-      margin-right: 20px;
+    .first span:last-child {
+      background: teal;
+      animation: marquee2 20s linear infinite;
+      animation-delay: 10s;
     }
     @keyframes marquee {
-      0% { 
-        transform: translateX(55%);
-        opacity: 100; 
-      }
+      0% { transform: translateX(100%); }
       100% { transform: translateX(-100%); }
     }
-    /* @keyframes marquee_double {
-      0% { transform: translateX(55%); }
-      100% { transform: translateX(-100%); }
-    } */
+    @keyframes marquee2 {
+      0% { transform: translateX(0%); }
+      100% { transform: translateX(-200%); }
+    }
   </style>
 </head>
 <body>
   <div class="first">
-    <div>
-      <h1>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt obcaecati repudiandae cumque.</h1>
-      <h1>Lorem2 ipsum, dolor sit amet consectetur adipisicing elit. Sunt obcaecati repudiandae cumque.</h1>
-    </div>
+    <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt obcaecati repudiandae cumque.</span>
+    <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt obcaecati repudiandae cumque.</span>
   </div>
 </body>
 </html>
