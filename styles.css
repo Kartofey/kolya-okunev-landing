@@ -263,7 +263,6 @@ header {
 
 .marquee_container {
   display: flex;
-  gap: 3rem;
   margin: 0 20px;
   overflow: hidden;
 }
@@ -276,6 +275,7 @@ header {
   font-size: 1.8rem;
   font-weight: 600;
   animation: marquee 20s linear infinite;
+  padding-right: 3rem;
 }
 
 .bullet {
@@ -288,5 +288,4 @@ header {
 .set {
   animation: marquee_double 20s linear infinite;
   animation-delay: 10s;
-  background: tan;
 }
