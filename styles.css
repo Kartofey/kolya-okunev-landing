@@ -289,3 +289,33 @@ header {
   animation: marquee_double 20s linear infinite;
   animation-delay: 10s;
 }
+
+/* Стили для блока "Обо мне" */
+.about {
+  box-sizing: border-box;
+  position: relative;
+  padding: 5rem 1rem;
+  background-color: rgb(255 255 255);
+  height: 543px;
+  
+}
+
+.about_title {
+  font-size: 2.25rem;
+  font-weight: 700;
+  text-align: center;
+  color: rgb(91 58 41);
+  margin-bottom: 4rem;
+}
+
+.about_content {
+  display: flex;
+  align-items: center;
+  flex-direction: raw;
+}
+/* Тут пилить нужно */
+.avatar {
+  width: 100px;
+  height: 100px;
+  background: black;
+}
