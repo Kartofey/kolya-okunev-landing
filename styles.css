@@ -297,7 +297,8 @@ header {
   padding: 5rem 1rem;
   background-color: rgb(255 255 255);
   height: 543px;
-  
+  z-index: -2;
+  overflow: hidden;
 }
 
 .about_title {
@@ -305,17 +306,59 @@ header {
   font-weight: 700;
   text-align: center;
   color: rgb(91 58 41);
-  margin-bottom: 4rem;
+  margin-bottom: 3rem;
+  opacity: 0.8;
 }
 
 .about_content {
+  box-sizing: border-box;
   display: flex;
-  align-items: center;
-  flex-direction: raw;
+  justify-content: center;
+  gap: 5rem;
 }
-/* Тут пилить нужно */
+
 .avatar {
-  width: 100px;
-  height: 100px;
-  background: black;
+  display: flex;
+  width: 16rem;
+  height: 16rem;
+  background: rgb(91 58 41);
+  border-radius: 100%;
+  overflow: hidden;
+}
+
+.avatar img {
+  object-fit: cover;
+  object-position: top;
+}
+
+.about_text {
+  position: relative;
+  width: 60%;
+}
+
+.rectangle_1 {
+  position: absolute;
+  width: 140%;
+  height: 120%;
+  top: -5%;
+  left: -5%;
+  background-color: rgba(232, 212, 182, 0.249);
+  transform: rotate(12deg);
+  border-radius: 100px;
+  z-index: -1;
+}
+
+.about_text span {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: rgb(139 69 19);
+  opacity: 0.7;
+}
+
+.about_text p {
+  line-height: 1.5rem;
+  color: rgb(55 65 81);
+  opacity: 0.7;
+  margin: 0;
+  margin-bottom: 0.8rem;
 }
