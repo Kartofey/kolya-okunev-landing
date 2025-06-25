@@ -297,7 +297,6 @@ header {
   padding: 5rem 1rem;
   background-color: rgb(255 255 255);
   height: 543px;
-  z-index: -2;
   overflow: hidden;
 }
 
@@ -318,11 +317,16 @@ header {
 }
 
 .avatar {
+  box-sizing: border-box;
   display: flex;
   width: 16rem;
   height: 16rem;
   background: rgb(91 58 41);
   border-radius: 100%;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  border-color: rgb(232 212 182);
+  border-width: 4px;
+  border-style: solid;
   overflow: hidden;
 }
 
@@ -334,18 +338,7 @@ header {
 .about_text {
   position: relative;
   width: 60%;
-}
-
-.rectangle_1 {
-  position: absolute;
-  width: 140%;
-  height: 120%;
-  top: -5%;
-  left: -5%;
-  background-color: rgba(232, 212, 182, 0.249);
-  transform: rotate(12deg);
-  border-radius: 100px;
-  z-index: -1;
+  box-shadow: inset;
 }
 
 .about_text span {
@@ -361,4 +354,14 @@ header {
   opacity: 0.7;
   margin: 0;
   margin-bottom: 0.8rem;
+}
+
+.rectangle_1 {
+  position: absolute;
+  width: 80%;
+  height: 80%;
+  top: 30%;
+  left: 30%;
+  background-color: rgba(232, 212, 182, 0.249);
+  transform: rotate(12deg);
 }
