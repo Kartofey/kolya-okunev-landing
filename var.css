@@ -1,0 +1,14 @@
+:root {
+  /* Разрешение */
+  --desktop-large-screen: 1280px;
+  --desktop-screen: 1024px;
+  --tablet-screen: 768px;
+  --mobile-screen: 360px;
+
+  /* Базовые цвета */
+  --brown-color: rgb(139 69 19);
+  --brown-dark-color: rgb(91 58 41);
+  --brown-sqare-1-color: rgb(234 215 195);
+  --brown-sqare-2-color: rgb(232 212 182);
+  --text-grey-color: rgb(55 65 81);
+}

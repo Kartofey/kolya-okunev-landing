@@ -1,35 +1,23 @@
-@font-face {
-  font-family: 'Pacific Regular';
-  src: url('./fonts/Pacifico-Regular.ttf');
-}
+@import url('normalize.css');
+@import url('var.css');
+@import url('fonts.css');
 
-@font-face {
-  font-family: 'Montserrat Regular';
-  src: url('./fonts/Montserrat-Regular.ttf');
-  font-weight: 400;
-}
-
-@font-face {
-  font-family: 'Montserrat Regular';
-  src: url('./fonts/Montserrat-Medium.ttf');
-  font-weight: 500;
-}
-
-@font-face {
-  font-family: 'Montserrat Regular';
-  src: url('./fonts/Montserrat-SemiBold.ttf');
-  font-weight: 600;
-}
-
-@font-face {
-  font-family: 'Montserrat Regular';
-  src: url('./fonts/Montserrat-Bold.ttf');
-  font-weight: 700;
-}
-
+/* Базовые стили */
 body {
-  margin: 0;
   font-family:'Montserrat Regular', sans-serif;
+}
+
+p {
+  line-height: 1.5rem;
+  opacity: 0.9;
+  margin: 0;
+  margin-bottom: 0.8rem;
+}
+
+input {
+  padding: 0.5rem 1rem;
+  border-width: 1px;
+  border-radius: 8px;
 }
 
 .btn {
@@ -42,6 +30,26 @@ body {
 
 .btn:hover {
   opacity: 0.9;
+}
+
+section {
+  position: relative;
+  box-sizing: border-box;
+  font-family:inherit;
+  overflow: hidden;
+}
+
+.section_title {
+  font-size: 2.25rem;
+  font-weight: 700;
+  text-align: center;
+  opacity: 0.9;
+}
+
+.card {
+  padding: 1.5rem;
+  border-radius: 20px;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
 }
 
 /* Стили для блока header */
@@ -58,13 +66,12 @@ header {
   align-items: center;
   justify-content: space-between;
   backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .logo {
   font-family: 'Pacific Regular';
-  color: rgb(139 69 19);
+  color: var(--brown-color);
   line-height: 1.4;
   font-size: 20px;
 }
@@ -78,17 +85,18 @@ header {
   text-decoration: none;
   font-family: inherit;
   font-weight: 500;
-  font-size: 13px;
-  color: black;
+  font-size: 14px;
+  color: var(--text-grey-color);
+  opacity: 0.9;
 }
 
 .header_links a:hover {
-  color: rgb(139 69 19);
+  color: var(--brown-color);
 }
 
 .contact {
   font-size: 18px;
-  background-color: rgb(139 69 19);
+  background-color: var(--brown-color);
   color: white;
 }
 
@@ -99,11 +107,8 @@ header {
 
 /* Стили для блока с банером */
 .banner {
-  position: relative;
-  background-color: #F5EBE0;
+  background-color: rgb(245 235 224);
   height: 543px;
-  font-family:inherit;
-  overflow: hidden;
 }
 
 .hero-text {
@@ -111,7 +116,8 @@ header {
   top: 3rem;
   left: 3rem;
   font-size: 1.5rem;
-  color: rgb(91 58 41 / 80%);
+  color: var(--brown-dark-color);
+  opacity: 0.8;
 }
 
 .square_1 {
@@ -120,7 +126,7 @@ header {
   height: 300px;
   top: 5%;
   left: 10%;
-  background-color: rgb(234 215 195);
+  background-color: var(--brown-sqare-1-color);
   opacity: 0.2;
   border-radius: 40px;
   transform: rotate(25deg);
@@ -132,7 +138,7 @@ header {
   height: 250px;
   top: 15%;
   right: 15%;
-  background-color: rgb(139 69 19);
+  background-color: var(--brown-color);
   opacity: 0.1;
   border-radius: 30px;
   transform: rotate(15deg);
@@ -144,7 +150,7 @@ header {
   height: 400px;
   bottom: 20%;
   left: 20%;
-  background-color: rgb(232 212 182);
+  background-color: var(--brown-sqare-2-color);
   opacity: 0.15;
   border-radius: 50px;
   transform: rotate(45deg);
@@ -156,7 +162,7 @@ header {
   height: 350px;
   bottom: 10%;
   right: 25%;
-  background-color: rgb(91 58 41);
+  background-color: var(--brown-dark-color);
   opacity: 0.1;
   border-radius: 45px;
   transform: rotate(35deg);
@@ -168,7 +174,7 @@ header {
   height: 200px;
   top: 40%;
   left: 30%;
-  background-color: rgb(139 69 19);
+  background-color: var(--brown-color);
   opacity: 0.15;
   border-radius: 25px;
   transform: rotate(60deg);
@@ -180,7 +186,7 @@ header {
   height: 280px;
   top: 30%;
   right: 35%;
-  background-color: rgb(232 212 182);
+  background-color: var(--brown-sqare-2-color);
   opacity: 0.2;
   border-radius: 35px;
   transform: rotate(25deg);
@@ -192,7 +198,7 @@ header {
   height: 320px;
   bottom: 35%;
   right: 15%;
-  background-color: rgb(234 215 195);
+  background-color: var(--brown-sqare-1-color);
   opacity: 0.15;
   border-radius: 40px;
   transform: rotate(15deg);
@@ -204,7 +210,7 @@ header {
   height: 260px;
   bottom: 45%;
   left: 15%;
-  background-color: rgb(91 58 41);
+  background-color: var(--brown-dark-color);
   opacity: 0.1;
   border-radius: 30px;
   transform: rotate(45deg);
@@ -222,7 +228,8 @@ header {
 .main_wrapper span{
   position: absolute;
   bottom: 20%;
-  color: rgb(91 58 41 / 80%);
+  color: var(--brown-dark-color);
+  opacity: 0.8;
   font-family: inherit;
   font-weight: 700;
   font-size: 120px;
@@ -245,7 +252,6 @@ header {
 
 /* Стили для блока с бегущей строкой */
 .marquee {
-  box-sizing: border-box;
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
   background-color: #F8EBD4;
@@ -271,7 +277,7 @@ header {
   display: flex;
   align-items: center;
   gap: 3rem;
-  color: rgb(139 69 19);
+  color: var(--brown-color);
   font-size: 1.8rem;
   font-weight: 600;
   animation: marquee 20s linear infinite;
@@ -282,7 +288,7 @@ header {
   width: 0.75rem;
   height: 0.75rem;
   border-radius: 10px;
-  background-color: rgb(139 69 19);
+  background-color: var(--brown-color);
 }
 
 .set {
@@ -292,21 +298,15 @@ header {
 
 /* Стили для блока "Обо мне" */
 .about {
-  box-sizing: border-box;
-  position: relative;
   padding: 5rem 1rem;
   background-color: rgb(255 255 255);
   height: 543px;
-  overflow: hidden;
+  z-index: -2;
 }
 
 .about_title {
-  font-size: 2.25rem;
-  font-weight: 700;
-  text-align: center;
-  color: rgb(91 58 41);
   margin-bottom: 3rem;
-  opacity: 0.8;
+  color: var(--brown-dark-color);
 }
 
 .about_content {
@@ -319,12 +319,13 @@ header {
 .avatar {
   box-sizing: border-box;
   display: flex;
+  aspect-ratio: 1 / 1;
   width: 16rem;
   height: 16rem;
-  background: rgb(91 58 41);
+  background: var(--brown-dark-color);
   border-radius: 100%;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-  border-color: rgb(232 212 182);
+  border-color: var(--brown-sqare-2-color);
   border-width: 4px;
   border-style: solid;
   overflow: hidden;
@@ -344,16 +345,12 @@ header {
 .about_text span {
   font-size: 1.5rem;
   font-weight: 600;
-  color: rgb(139 69 19);
-  opacity: 0.7;
+  color: var(--brown-color);
+  opacity: 0.9;
 }
 
 .about_text p {
-  line-height: 1.5rem;
-  color: rgb(55 65 81);
-  opacity: 0.7;
-  margin: 0;
-  margin-bottom: 0.8rem;
+  color: var(--text-grey-color);
 }
 
 .rectangle_1 {
@@ -364,4 +361,6 @@ header {
   left: 30%;
   background-color: rgba(232, 212, 182, 0.249);
   transform: rotate(12deg);
+  border-radius: 100px;
+  z-index: -1;
 }
