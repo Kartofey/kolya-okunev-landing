@@ -96,7 +96,7 @@ header {
 }
 
 .contact {
-  font-size: 18px;
+  font-size: 1.1rem;
   background-color: var(--brown-color);
   color: white;
 }
@@ -535,4 +535,10 @@ header {
 
 .slider_btn img {
   width: 24px;
+}
+
+.reviews_btn {
+  font-size: 1.25rem;
+  font-weight: 600;
+  padding: 1rem
 }
