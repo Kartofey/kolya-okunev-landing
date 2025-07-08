@@ -454,20 +454,25 @@ header {
 
 .reviews_slider {
   position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
 }
 
 .reviews_cards {
   display: flex;
-  overflow-x: auto;
   gap: 2rem;
+  padding: 0 1.5rem 2rem 1.5rem;
+  overflow-y: hidden;
 }
 
 .review_card {
-  width: 400px;
+  width: 360px;
   background-color: rgb(255 245 225);
   display: flex;
   flex-direction: column;
   grid-gap: 1rem;
+  flex-shrink: 0;
 }
 
 .review_card p {
@@ -505,4 +510,29 @@ header {
 
 .review_card__stars img {
   width: 1rem;
+}
+
+.slider_btn {
+  position: absolute;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 100%;
+  background-color: var(--white-background);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+  z-index: 10;
+}
+
+.slider_left {
+  left: -20px;
+}
+
+.slider_right {
+  right: -20px;
+}
+
+.slider_btn img {
+  width: 24px;
 }
