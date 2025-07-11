@@ -765,3 +765,17 @@ header {
 }
 
 /* Стили для секции "FAQ" */
+.faq {
+  background-color: var(--cream-background);
+}
+
+.faq_content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+}
+
+.faq_title {
+  color: var(--brown-dark-color);
+}
