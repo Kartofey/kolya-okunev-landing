@@ -317,7 +317,48 @@
    <section class="form section">
     <div class="form_block">
       <div class="form_title section_title">Забронировать дату</div>
+      <form action="/submit"  method="post">
+        <div class="form_stroke">
+          <div class="form_group">
+            <label for="name">Ваше имя и фамилия*</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div class="form_group">
+            <label for="phone">Номер телефона*</label>
+            <input type="text" id="phone" name="phone" required>
+          </div>
+        </div>
+        <div class="form_stroke">
+          <div class="form_group">
+            <label for="email">Ваша почта</label>
+            <input type="email" id="email" name="email">
+          </div>
+          <div class="form_group">
+            <label for="date">Дата мероприятия</label>
+            <input type="date" id="date" name="date">
+          </div>
+        </div>
+        <div class="form_group">
+          <label for="select">Тип мероприятия</label>
+          <select id="select">
+            <option hidden>Выберите тип мероприятия</option>
+            <option>Не выбрано</option>
+            <option>мероприятие2</option>
+            <option>мероприятие3</option>
+          </select>
+        </div>
+        <div class="form_group">
+          <label for="info">Дополнительная информация</label>
+          <textarea id="info" name="info"></textarea>
+        </div>
+        <div class="form_group__checkbox">
+          <input type="checkbox" id="checkbox" required>
+          <label for="checkbox">Я согласен на обработку персональных данных*</label>
+        </div>
+        <button class="form_btn btn" type="submit">Отправить заявку</button>
+      </form>
     </div>
    </section>
+   <!-- FAQ -->
 </body>
 </html>

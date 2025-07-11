@@ -13,10 +13,53 @@ p {
   margin: 0;
 }
 
-input {
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+input, select {
+  box-sizing: border-box;
   padding: 0.5rem 1rem;
-  border-width: 1px;
+  border: 1px solid rgb(209 213 219);
   border-radius: 8px;
+  width: 100%;
+}
+
+textarea {
+  box-sizing: border-box;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  border-color: rgb(209 213 219);
+  width: 100%;
+  height: 8rem;
+}
+
+input:focus, textarea:focus, select:focus {
+  outline-color: var(--brown-color-opacity);
+  outline-style: solid;
+  outline-width: medium;
+}
+
+input[type="checkbox"] {
+  width: 1.25rem;
+  height: 1.25rem;
+  cursor: pointer;
+  accent-color: var(--brown-color);
+}
+
+input[type="checkbox"]:focus {
+  outline: none;
+}
+
+label {
+  display: inline-block;
+  color: var(--text-grey-color);
+  opacity: 0.9;
+  font-size: 0.875rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
 }
 
 .btn {
@@ -676,3 +719,49 @@ header {
 }
 
 /* Стили для секции "ФОС" */
+.form {
+  background-color: var(--brown-dark-color);
+  display: flex;
+  justify-content: center;
+}
+
+.form_block {
+  box-sizing: border-box;
+  padding: 2rem;
+  width: 48rem;
+  background-color: var(--white-background);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.form_title {
+  color: var(--brown-dark-color);
+}
+
+.form_stroke {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.25rem;
+}
+
+.form_group__checkbox {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.form_group__checkbox label {
+  margin-bottom: 0;
+  font-weight: normal;
+}
+
+.form_btn {
+  font-size: 1rem;
+  padding: 1rem;
+  background-color: var(--brown-color);
+  color: white;
+}
+
+/* Стили для секции "FAQ" */

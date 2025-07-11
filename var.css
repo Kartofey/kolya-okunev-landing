@@ -7,6 +7,7 @@
 
   /* Базовые цвета */
   --brown-color: rgb(139 69 19);
+  --brown-color-opacity: rgb(139 69 19 / 0.5);
   --brown-dark-color: rgb(91 58 41);
   --brown-sqare-1-color: rgb(234 215 195);
   --brown-sqare-2-color: rgb(232 212 182);
