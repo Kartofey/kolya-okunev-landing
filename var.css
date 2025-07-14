@@ -12,6 +12,8 @@
   --brown-sqare-1-color: rgb(234 215 195);
   --brown-sqare-2-color: rgb(232 212 182);
   --white-background: rgb(255 255 255);
+  --white-background-opacity-min: rgb(255 255 255 / 0.8);
+  --white-background-opacity-max: rgb(255 255 255 / 0.1);
   --cream-background: rgb(255 245 225);
   --text-grey-color: rgb(55 65 81);
 }

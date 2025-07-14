@@ -746,6 +746,10 @@ header {
   gap: 1.25rem;
 }
 
+.form_group {
+  width: 100%;
+}
+
 .form_group__checkbox {
   display: flex;
   align-items: center;
@@ -778,4 +782,155 @@ header {
 
 .faq_title {
   color: var(--brown-dark-color);
+}
+
+.faq_list {
+  max-width: 48rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.faq_question {
+  background-color: var(--white-background);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.faq_answer {
+  background-color: var(--white-background);
+}
+
+.opened_question {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  padding-bottom: 1rem;
+}
+
+.opened_answer {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  padding-top: 1rem;
+}
+
+.closed {
+  display: none;
+}
+
+.faq_question span {
+  color: var(--brown-dark-color);
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+
+.faq_answer p {
+  color: var(--text-grey-color);
+}
+
+.faq_toggle_icon {
+  position: relative;
+  width: 0.75rem;
+  height: 0.75rem;
+}
+
+.faq_toggle_icon::after, .faq_toggle_icon::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  height: 1.5px;
+  background: var(--brown-dark-color);
+  transition: transform 0.3s ease;
+  transform: translateY(-50%);
+}
+
+.faq_toggle_icon::after {
+  transform: translateY(-50%) rotate(90deg);
+}
+
+.opened_question .faq_toggle_icon::after {
+  transform: translateY(-50%) rotate(0deg);
+}
+
+/* Стили для footer */
+.footer {
+  background-color: var(--brown-dark-color);
+  padding: 3rem 2.5rem;
+}
+
+.footer_content {
+  display: flex;
+}
+
+.footer_about {
+  width: 30rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.footer_about p {
+  color: var(--white-background-opacity-min);
+}
+
+.footer_logo {
+  color: var(--white-background);
+  font-size: 1.5rem;
+}
+
+.footer_links {
+  display: flex;
+  gap: 1rem;
+}
+
+.footer_link {
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: var(--white-background-opacity-max);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+}
+
+.footer_links img {
+  width: 1.5rem;
+}
+
+.footer_contact {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.footer_contact__title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--white-background);
+}
+
+.footer_contact__content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.footer_contact__item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.footer_contact__item p {
+  color: var(--white-background);
+}
+
+.footer_item_icon {
+  width: 1rem;
+  height: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
