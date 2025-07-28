@@ -16,7 +16,12 @@
   --white-background-opacity-max: rgb(255 255 255 / 0.1);
   --cream-background: rgb(255 245 225);
   --banner-background: rgb(245 235 224);
+  --marquee-background: #F8EBD4;
   --text-grey-color: rgb(55 65 81);
   --input-border-color: rgb(209 213 219);
   --shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+  --shadow-big: 0 10px 20px rgba(0, 0, 0, 0.2);
+
+  /* Размеры */
+  --header-height: 5rem; /* 80px */
 }

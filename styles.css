@@ -5,6 +5,7 @@
 /* Базовые стили */
 body {
   font-family:'Montserrat Regular', sans-serif;
+  padding-top: var(--header-height);
 }
 
 p {
@@ -98,11 +99,11 @@ section {
 
 /* Стили для header */
 header {
-  position: sticky;
+  position: fixed;
   box-sizing: border-box;
   top: 0;
   background-color: var(--white-background-opacity-min);
-  height: 80px;
+  height: var(--header-height);
   width: 100%;
   padding: 0 2.5rem;
   display: flex;
@@ -156,7 +157,7 @@ header {
 .banner {
   padding: 0;
   background-color: var(--banner-background);
-  min-height: 543px;
+  min-height: 100vh;
 }
 
 .hero-text {
@@ -299,8 +300,9 @@ header {
 }
 
 /* Стили для секции с бегущей строкой */
+/* Нужно поправить появление строки для экрананов выше 1400px ширины */
 .marquee {
-  background-color: #F8EBD4;
+  background-color: var(--marquee-background);
   padding: 2.5rem 1rem;
 }
 
@@ -346,7 +348,6 @@ header {
 /* Стили для секции "Обо мне" */
 .about {
   background-color: var(--white-background);
-  min-height: 543px;
   z-index: -2;
 }
 
@@ -371,7 +372,7 @@ header {
   height: 16rem;
   background: var(--brown-dark-color);
   border-radius: 100%;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  box-shadow: var(--shadow-big);
   border-color: var(--brown-sqare-2-color);
   border-width: 4px;
   border-style: solid;
@@ -389,8 +390,7 @@ header {
   width: 60%;
   padding: 2.5rem;
   border-radius: 50px;
-  background-color: rgba(232, 212, 182, 0.249);
-  box-shadow: inset;
+  background-color: rgb(232 212 182 / 0.249);
 }
 
 .about_text span {
@@ -476,7 +476,6 @@ header {
 /* Стили для секции "Отзывы" */
 .reviews {
   background-color: var(--white-background);
-  min-height: 543px;
 }
 
 .reviews_content {
@@ -583,7 +582,6 @@ header {
 /* Стили для секции "Фтогалерея" */
 .gallery {
   background-color: var(--cream-background);
-  min-height: 543px;
 }
 
 .gallery_content {
@@ -636,7 +634,6 @@ header {
 /* Стили для секции "Этапы подготовки" */
 .steps {
   background-color: var(--white-background);
-  min-height: 543px;
 }
 
 .steps_content {
