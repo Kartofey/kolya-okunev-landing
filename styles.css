@@ -303,7 +303,7 @@ header {
 /* Нужно поправить появление строки для экрананов выше 1400px ширины */
 .marquee {
   background-color: var(--marquee-background);
-  padding: 2.5rem 1rem;
+  padding: 2.5rem 2rem;
 }
 
 @keyframes marquee {
@@ -317,9 +317,9 @@ header {
 }
 
 .marquee_container {
-  display: flex;
-  margin: 0 20px;
+  display: flex ;
   overflow: hidden;
+  background-color: red;
 }
 
 .marquee_content {
@@ -331,6 +331,7 @@ header {
   font-weight: 600;
   animation: marquee 20s linear infinite;
   padding-right: 3rem;
+  background-color: yellow;
 }
 
 .bullet {
@@ -343,6 +344,7 @@ header {
 .set {
   animation: marquee_double 20s linear infinite;
   animation-delay: 10s;
+  background-color: aquamarine;
 }
 
 /* Стили для секции "Обо мне" */
