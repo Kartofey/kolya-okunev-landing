@@ -319,19 +319,17 @@ header {
 .marquee_container {
   display: flex ;
   overflow: hidden;
-  background-color: red;
 }
 
 .marquee_content {
+  min-width: 100%;
   display: flex;
   align-items: center;
-  gap: 3rem;
+  justify-content: space-around;
   color: var(--brown-color);
   font-size: 1.8rem;
   font-weight: 600;
   animation: marquee 20s linear infinite;
-  padding-right: 3rem;
-  background-color: yellow;
 }
 
 .bullet {
@@ -344,7 +342,6 @@ header {
 .set {
   animation: marquee_double 20s linear infinite;
   animation-delay: 10s;
-  background-color: aquamarine;
 }
 
 /* Стили для секции "Обо мне" */
