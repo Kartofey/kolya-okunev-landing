@@ -118,19 +118,19 @@ header {
   font-family: 'Pacific Regular';
   color: var(--brown-color);
   line-height: 1.4;
-  font-size: 20px;
+  font-size: 1.2rem;
 }
 
 .header_links {
   display: flex;
-  gap: 22px;
+  gap: 1.2rem;
 }
 
 .header_links a{
   text-decoration: none;
   font-family: inherit;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 1rem;
   color: var(--text-grey-color);
   opacity: 0.9;
 }
@@ -164,15 +164,15 @@ header {
   position: absolute;
   top: 3rem;
   left: 3rem;
-  font-size: 1.5rem;
+  font-size: 2vw;
   color: var(--brown-dark-color);
   opacity: 0.8;
 }
 
 .square_1 {
   position: absolute;
-  width: 300px;
-  height: 300px;
+  width: 20vw;
+  height: 20vw;
   top: 5%;
   left: 10%;
   background-color: var(--brown-sqare-1-color);
@@ -183,8 +183,8 @@ header {
 
 .square_2 {
   position: absolute;
-  width: 250px;
-  height: 250px;
+  width: 18vw;
+  height: 18vw;
   top: 15%;
   right: 15%;
   background-color: var(--brown-color);
@@ -195,8 +195,8 @@ header {
 
 .square_3 {
   position: absolute;
-  width: 400px;
-  height: 400px;
+  width: 30vw;
+  height: 30vw;
   bottom: 20%;
   left: 20%;
   background-color: var(--brown-sqare-2-color);
@@ -207,8 +207,8 @@ header {
 
 .square_4 {
   position: absolute;
-  width: 350px;
-  height: 350px;
+  width: 25vw;
+  height: 25vw;
   bottom: 10%;
   right: 25%;
   background-color: var(--brown-dark-color);
@@ -219,8 +219,8 @@ header {
 
 .square_5 {
   position: absolute;
-  width: 200px;
-  height: 200px;
+  width: 15vw;
+  height: 15vw;
   top: 40%;
   left: 30%;
   background-color: var(--brown-color);
@@ -231,8 +231,8 @@ header {
 
 .square_6 {
   position: absolute;
-  width: 280px;
-  height: 280px;
+  width: 19vw;
+  height: 19vw;
   top: 30%;
   right: 35%;
   background-color: var(--brown-sqare-2-color);
@@ -243,8 +243,8 @@ header {
 
 .square_7 {
   position: absolute;
-  width: 320px;
-  height: 320px;
+  width: 21vw;
+  height: 21vw;
   bottom: 35%;
   right: 15%;
   background-color: var(--brown-sqare-1-color);
@@ -255,8 +255,8 @@ header {
 
 .square_8 {
   position: absolute;
-  width: 260px;
-  height: 260px;
+  width: 18vw;
+  height: 18vw;
   bottom: 45%;
   left: 15%;
   background-color: var(--brown-dark-color);
@@ -281,12 +281,13 @@ header {
   opacity: 0.8;
   font-family: inherit;
   font-weight: 700;
-  font-size: 120px;
+  font-size: 8vw;
 }
 
 .main_wrapper img{
   position: absolute;
-  right: 18%;
+  width: 70vw;
+  align-self: center;
 }
 
 .banner_firstname {
@@ -300,10 +301,9 @@ header {
 }
 
 /* Стили для секции с бегущей строкой */
-/* Нужно поправить появление строки для экрананов выше 1400px ширины */
 .marquee {
   background-color: var(--marquee-background);
-  padding: 2.5rem 2rem;
+  padding: 2vw 2vw;
 }
 
 @keyframes marquee {
@@ -327,14 +327,14 @@ header {
   align-items: center;
   justify-content: space-around;
   color: var(--brown-color);
-  font-size: 1.8rem;
+  font-size: 2vw;
   font-weight: 600;
   animation: marquee 20s linear infinite;
 }
 
 .bullet {
-  width: 0.75rem;
-  height: 0.75rem;
+  width: 0.75vw;
+  height: 0.75vw;
   border-radius: 10px;
   background-color: var(--brown-color);
 }
@@ -421,9 +421,9 @@ header {
 }
 
 .why_me_title__text {
-  width: 60%;
+  width: 100%;
   text-align: center;
-  margin-bottom: 3rem;
+  margin-bottom: 3vw;
 }
 
 .why_me_title__text p {
@@ -455,21 +455,22 @@ header {
   align-items: center;
   justify-content: center;
   border-radius: 100%;
-  height: 4rem;
-  width: 4rem;
+  height: 4vw;
+  width: 4vw;
   background-color: var(--brown-sqare-2-color);
   opacity: 0.3;
   /* color: var(--brown-color, 1); Для иконки */
 }
 
 .why_me_card_icon img {
-  width: 3rem;
+  height: 3vw;
+  width: 3vw;
 }
 
 .card_title {
   color: var(--brown-dark-color);
   font-weight: 600;
-  font-size: 1.25rem;
+  font-size: 1.4vw;
 }
 
 /* Стили для секции "Отзывы" */
@@ -928,4 +929,109 @@ header {
 
 .footer_item_icon img {
   width: 1rem;
+}
+
+/* Стили для разрешения экрана 1280px */
+
+@media (max-width: 1280px) {
+ 
+  /* Стили для секции "Почему я?" */
+  .card_title {
+    font-size: 1.6vw;
+  }
+
+  .why_me_title__text {
+    font-size: 1.1rem;
+  }
+}
+
+/* Стили для разрешения экрана 1024px */
+@media (max-width: 1024px) {
+
+  body {
+    padding-top: var(--header-height-1024);
+  }
+
+  section {
+    padding: 5vw 2.5rem;
+  }
+
+  .section_title {
+    font-size: 3vw;
+  }
+
+  p {
+    line-height: 1.8vw;
+  }
+
+  /* Стили для header */
+  header {
+    height: var(--header-height-1024);
+  }
+
+  .logo {
+    font-size: 1.8vw;
+  }
+
+  .header_links {
+    gap: 1.5vw;
+  }
+
+  .header_links a{
+    font-size: 1.4vw;
+  }
+
+  .contact {
+    font-size: 1.4vw;
+  }
+
+  .contact img {
+    height: 1.4vw;
+    width: 1.4vw;
+  }
+
+  /* Стили для секции "Обо мне" */
+  .about_title {
+    margin-bottom: 3vw;
+  }
+
+  .about_content {
+    gap: 5vw;
+  }
+
+  .avatar {
+    width: 20vw;
+    height: 20vw;
+  }
+
+  .about_text {
+    padding: 2.5vw;
+  }
+
+  .about_text span {
+    font-size: 2vw;
+  }
+
+  .about_text p {
+    font-size: 1.4vw;
+  }
+
+  /* Стили для секции "Почему я?" */
+  .why_me_content {
+    gap: 1vw;
+  }
+
+  .why_me_title {
+    margin-bottom: 3vw;
+  }
+
+  .why_me_title__text {
+    font-size: 1rem;
+    margin-bottom: 3vw;
+  }
+
+  .card_title {
+    font-size: 1.6vw;
+  }
+
 }
