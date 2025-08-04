@@ -351,8 +351,8 @@ header {
 }
 
 .about_title {
-  margin-bottom: 3rem;
   color: var(--brown-dark-color);
+  margin-bottom: 3rem;
 }
 
 .about_content {
@@ -413,17 +413,17 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1rem;
 }
 
 .why_me_title {
   color: var(--brown-dark-color);
+  margin-bottom: 3rem;
 }
 
 .why_me_title__text {
   width: 100%;
   text-align: center;
-  margin-bottom: 3vw;
+  margin-bottom: 2rem;
 }
 
 .why_me_title__text p {
@@ -455,22 +455,22 @@ header {
   align-items: center;
   justify-content: center;
   border-radius: 100%;
-  height: 4vw;
-  width: 4vw;
+  height: 5vw;
+  width: 5vw;
   background-color: var(--brown-sqare-2-color);
   opacity: 0.3;
   /* color: var(--brown-color, 1); Для иконки */
 }
 
 .why_me_card_icon img {
-  height: 3vw;
-  width: 3vw;
+  height: 4vw;
+  width: 4vw;
 }
 
 .card_title {
   color: var(--brown-dark-color);
   font-weight: 600;
-  font-size: 1.4vw;
+  font-size: 1.3rem;
 }
 
 /* Стили для секции "Отзывы" */
@@ -725,7 +725,7 @@ header {
   border-radius: 20px;
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 3rem;
 }
 
 .form_title {
@@ -931,107 +931,108 @@ header {
   width: 1rem;
 }
 
-/* Стили для разрешения экрана 1280px */
-
-@media (max-width: 1280px) {
+/* Стили для разрешения экрана 1024 - 1279px */
+@media (max-width: 1279px) {
  
-  /* Стили для секции "Почему я?" */
-  .card_title {
-    font-size: 1.6vw;
-  }
-
-  .why_me_title__text {
-    font-size: 1.1rem;
-  }
-}
-
-/* Стили для разрешения экрана 1024px */
-@media (max-width: 1024px) {
-
   body {
     padding-top: var(--header-height-1024);
   }
-
+  
   section {
     padding: 5vw 2.5rem;
   }
-
+  
   .section_title {
-    font-size: 3vw;
+    font-size: 2.3rem;
   }
-
+  
   p {
     line-height: 1.8vw;
   }
-
+  
   /* Стили для header */
   header {
     height: var(--header-height-1024);
   }
-
+  
   .logo {
-    font-size: 1.8vw;
+    font-size: 1.1rem;
   }
-
+  
   .header_links {
     gap: 1.5vw;
   }
-
+  
   .header_links a{
-    font-size: 1.4vw;
+    font-size: 0.9rem;
   }
-
+  
   .contact {
-    font-size: 1.4vw;
+    font-size: 1rem;
   }
-
+  
   .contact img {
-    height: 1.4vw;
-    width: 1.4vw;
+    height: 1rem;
+    width: 1rem;
   }
-
+  
   /* Стили для секции "Обо мне" */
   .about_title {
-    margin-bottom: 3vw;
+    margin-bottom: 2.5rem;
   }
-
+  
   .about_content {
     gap: 5vw;
   }
-
+  
   .avatar {
     width: 20vw;
     height: 20vw;
   }
-
+  
   .about_text {
     padding: 2.5vw;
   }
-
+  
   .about_text span {
-    font-size: 2vw;
+    font-size: 1.4rem;
   }
-
+  
   .about_text p {
-    font-size: 1.4vw;
+    font-size: 0.9rem;
   }
-
-  /* Стили для секции "Почему я?" */
-  .why_me_content {
-    gap: 1vw;
-  }
-
+  
+  /* Стили для секции "Почему я?" */  
   .why_me_title {
-    margin-bottom: 3vw;
+    margin-bottom: 2rem;
   }
-
-  .why_me_title__text {
-    font-size: 1rem;
-    margin-bottom: 3vw;
-  }
-
+  
   .card_title {
     font-size: 1.6vw;
   }
+  
+  .why_me_card p {
+    font-size: 0.9rem;
+  }
+ 
+  /* Стили для секции "Почему я?" */
+  .review_card p {
+    font-size: 0.9rem;
+  }
 
+  .reviews_btn {
+    font-size: 1.1rem;
+  }
+
+  /* Стили для секции "ФОС" */
+
+  .form_block {
+    width: 40rem;
+  }
+
+  .form_btn {
+    font-size: 1.1rem;
+  }
+
+  /*  Нужно добить фак текст */
 }

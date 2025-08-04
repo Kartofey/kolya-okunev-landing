@@ -1,8 +1,9 @@
 :root {
   /* Разрешение */
-  /* --desktop-screen: 1024px;
+  --desktop-screen-large: 1280px;
+  --desktop-screen: 1024px;
   --tablet-screen: 768px;
-  --mobile-screen: 360px; */
+  --mobile-screen: 360px;
 
   /* Базовые цвета */
   --brown-color: rgb(139 69 19);
