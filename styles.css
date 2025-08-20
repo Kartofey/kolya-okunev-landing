@@ -931,8 +931,8 @@ header {
   width: 1rem;
 }
 
-/* Стили для разрешения экрана 1024 - 1279px */
-@media (max-width: 1279px) {
+/* Стили для разрешения экрана 1024 - 1199px */
+@media (max-width: 1199px) {
  
   body {
     padding-top: var(--header-height-1024);
