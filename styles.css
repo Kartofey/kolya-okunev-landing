@@ -164,7 +164,7 @@ header {
   position: absolute;
   top: 3rem;
   left: 3rem;
-  font-size: 2vw;
+  font-size: 2vw; 
   color: var(--brown-dark-color);
   opacity: 0.8;
 }
@@ -938,10 +938,6 @@ header {
     padding-top: var(--header-height-1024);
   }
   
-  section {
-    padding: 5vw 2.5rem;
-  }
-  
   .section_title {
     font-size: 2.3rem;
   }
@@ -1024,8 +1020,11 @@ header {
     font-size: 1.1rem;
   }
 
-  /* Стили для секции "ФОС" */
+  .why_me_card p {
+    font-size: 0.9rem;
+  }
 
+  /* Стили для секции "ФОС" */
   .form_block {
     width: 40rem;
   }
@@ -1034,5 +1033,21 @@ header {
     font-size: 1.1rem;
   }
 
-  /*  Нужно добить фак текст */
+  form {
+    gap: 1rem;
+  }
+
+  /*  Стили для секции "FAQ" */
+  .faq_answer {
+    font-size: 0.9rem;
+  }
+
+  /*  Стили для footer */
+  .footer {
+    padding: 2rem 2.5rem;
+  }
+
+  .footer_logo {
+    font-size: 1.5rem;
+  }
 }
