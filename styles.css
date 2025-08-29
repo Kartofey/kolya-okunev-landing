@@ -931,7 +931,7 @@ header {
   width: 1rem;
 }
 
-/* Стили для разрешения экрана 1024 - 1199px */
+/* Стили для разрешения экрана 1024px - 1199px */
 @media (max-width: 1199px) {
  
   body {
@@ -1050,4 +1050,10 @@ header {
   .footer_logo {
     font-size: 1.5rem;
   }
+}
+
+/* Стили для разрешения экрана 768px - 1023px */
+@media (max-width: 1023px) {
+
+
 }
