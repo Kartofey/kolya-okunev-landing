@@ -8,9 +8,16 @@
   <!-- тут должен быть мета тег для поисковиков -->
   <!-- Надо подумать над персональными данными в форме -->
 </head>
-<body>
+<body class="modal-open">
   <header>
-    <div class="logo">Николай<br>Окунев</div>
+    <div class="logo_wrapper">
+      <div class="header_burger_btn">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      <div class="logo">Николай<br>Окунев</div>
+    </div>
     <nav class="header_links">
       <a href="#about">Обо мне</a>
       <a href="#">Услуги</a>
@@ -24,6 +31,22 @@
       <span>+7 (000) 123-45-67</span>
     </button>
   </header>
+  <div class="overlay">
+    <div class="modal_links_tablet">
+      <div class="modal_close">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="rgb(255 245 225)"><path d="M10.8284 12.0007L15.7782 16.9504L14.364 18.3646L8 12.0007L14.364 5.63672L15.7782 7.05093L10.8284 12.0007Z"></path></svg>
+        <span>Скрыть</span>
+      </div>
+      <nav class="header_links_tablet__list">
+        <a href="#about">Обо мне</a>
+        <a href="#">Услуги</a>
+        <a href="#">Отзывы</a>
+        <a href="#">Фотогалерея</a>
+        <a href="#">Этапы подготовки</a>
+        <a href="#">FAQ</a>
+      </nav>
+    </div>
+  </div>
   <!-- Баннер -->
   <section class="banner section">
     <div class="hero-text">Профессиональный ведущий для вашей<br>идеальной свадьбы</div>
