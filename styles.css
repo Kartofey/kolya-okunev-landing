@@ -177,10 +177,7 @@ header {
   width: 1rem;
 }
 
-.modal-open {
-  overflow: hidden;
-}
-
+/* Стили для модальных окон и popup */
 .overlay {
   box-sizing: border-box;
   position: absolute;
@@ -196,6 +193,10 @@ header {
   overflow: hidden;
 }
 
+.modal-open {
+  overflow: hidden;
+}
+
 .modal_links {
   display: none;
 }
@@ -203,7 +204,7 @@ header {
 .modal_links_content {
   position: absolute;
   top: 0;
-  height: 30%;
+  height: max-content;
   width: 100%;
   background-color: var(--cream-background);
 }
@@ -211,22 +212,50 @@ header {
 .modal_close {
   width: 100%;
   display: flex;
+  justify-content: center;
+  padding: 0.5rem;
   background-color: var(--brown-color);
   font-weight: 500;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   color: var(--cream-background);
+  cursor: pointer;
 }
-/* Надо допилить сетку */
+
 .modal_links__list {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 0.3rem;
+  grid-template-columns: repeat(2, minmax(100px, max-content));
+  gap: 0.5rem;
+  justify-content: space-around;
+  padding: 1rem;
 }
 
 .modal_links__list a {
   font-weight: 500;
   font-size: 1.2rem;
   color: var(--text-grey-color);
+  cursor: pointer;
+}
+/* Тут какая то борода с высотой окна */
+.popup_form {
+  /* display: none; */
+  display: flex;
+  padding: 3rem;
+  overflow-y: auto; 
+}
+
+.popup_form_content {
+  box-sizing: border-box;
+  position: absolute;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  background-color: var(--white-background);
+  border-radius: 20px;
+}
+
+.popup_form_title {
+  color: var(--brown-dark-color);
 }
 
 /* Стили для секции с банером */
@@ -1165,9 +1194,10 @@ header {
     width: 0.8rem;
   }
 
-  .modal_links {
+  /* Стили для модальных окон и popup */ 
+  /* .modal_links {
     display: flex;
-  }
+  } */
   
   /* Стили для секции "Обо мне" */
   .about_title {
@@ -1246,5 +1276,26 @@ header {
 
   .footer_logo {
     font-size: 1.5rem;
+  }
+}
+
+/* Стили для разрешения экрана 320px - 767px */
+@media (max-width: 767px) {
+  
+  /* Стили для модальных окон и popup */ 
+  .modal_close {
+    padding: 0.3rem;
+    font-size: 1.2rem;
+  }
+
+  .modal_links__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5rem;
+  }
+
+  .modal_links__list a {
+    font-size: 1rem;
   }
 }
