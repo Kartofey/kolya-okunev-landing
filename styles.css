@@ -17,7 +17,7 @@ p {
 form {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 1.5rem;
 }
 
 input, select {
@@ -180,7 +180,7 @@ header {
 /* Стили для модальных окон и popup */
 .overlay {
   box-sizing: border-box;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -190,7 +190,6 @@ header {
   justify-content: center;
   align-items: center;
   z-index: 100;
-  overflow: hidden;
 }
 
 .modal-open {
@@ -199,6 +198,7 @@ header {
 
 .modal_links {
   display: none;
+  overflow: hidden;
 }
 
 .modal_links_content {
@@ -207,6 +207,7 @@ header {
   height: max-content;
   width: 100%;
   background-color: var(--cream-background);
+  box-shadow: var(--shadow-big);
 }
 
 .modal_close {
@@ -235,17 +236,20 @@ header {
   color: var(--text-grey-color);
   cursor: pointer;
 }
-/* Тут какая то борода с высотой окна */
+
 .popup_form {
-  /* display: none; */
-  display: flex;
+  display: none;
   padding: 3rem;
+}
+
+.popup_form form{
+  padding: 1rem;
   overflow-y: auto; 
 }
 
 .popup_form_content {
   box-sizing: border-box;
-  position: absolute;
+  max-height: 100%;
   padding: 2rem;
   display: flex;
   flex-direction: column;
@@ -262,7 +266,8 @@ header {
 .banner {
   padding: 0;
   background-color: var(--banner-background);
-  min-height: 100vh;
+  height: 100vh;
+  max-height: 700px;
 }
 
 .hero-text {
@@ -1168,6 +1173,10 @@ header {
     padding: 3rem 2rem;
   }
 
+  form {
+    gap: 1.5rem;
+  }
+
   /* Стили для header */   
   .header_links {
     display: none;
@@ -1195,26 +1204,17 @@ header {
   }
 
   /* Стили для модальных окон и popup */ 
-  /* .modal_links {
-    display: flex;
-  } */
+  .popup_form_content {
+    padding: 1.5rem;
+  }
   
   /* Стили для секции "Обо мне" */
   .about_title {
-    margin-bottom: 2.5rem;
-  }
-  
-  .about_content {
-    gap: 5vw;
-  }
-  
-  .avatar {
-    width: 20vw;
-    height: 20vw;
+    margin-bottom: 2rem;
   }
   
   .about_text {
-    padding: 2.5vw;
+    padding: 4vw;
   }
   
   .about_text span {
@@ -1222,20 +1222,22 @@ header {
   }
   
   .about_text p {
-    font-size: 0.9rem;
+    font-size: 1rem;
   }
-  
-  /* Стили для секции "Почему я?" */  
-  .why_me_title {
-    margin-bottom: 2rem;
-  }
-  
+  /* Тут нужно проработать, либо поменять размеры и  еденицы. Либо сделать кролл для планшета */
+  /* Стили для секции "Почему я?" */ 
   .card_title {
     font-size: 1.6vw;
   }
   
   .why_me_card p {
     font-size: 0.9rem;
+  }
+
+  .why_me_cards{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
   }
  
   /* Стили для секции "Почему я?" */
