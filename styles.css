@@ -103,6 +103,24 @@ section {
   box-shadow: var(--shadow);
 }
 
+.popup_and_form {
+  box-sizing: border-box;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  border-radius: 20px;
+}
+
+.close_btn {
+  height: 30px;
+  width: 30px;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+/* Нужно докумекать вынос стилей, чтобы без дублей было */
+
 /* Стили для header */
 header {
   position: fixed;
@@ -239,7 +257,7 @@ header {
 }
 
 .popup_form {
-  /* display: none; */
+  display: none;
   padding: 3rem;
 }
 
@@ -249,25 +267,13 @@ header {
 }
 
 .popup_form_content {
-  box-sizing: border-box;
   position: relative;
   max-height: 100%;
-  padding: 2rem;
-  display: flex;
-  flex-direction: column;
-  gap: 3rem;
   background-color: var(--white-background);
-  border-radius: 20px;
 }
 
 .popup_form__close {
   position: absolute;
-  height: 30px;
-  width: 30px;
-  top: 10;
-  right: 10;
-  /* Странно5 поведение */
-  cursor: pointer;
 }
 
 .popup_form__close::before,
@@ -291,6 +297,28 @@ header {
 
 .popup_form_title {
   color: var(--brown-dark-color);
+}
+
+.popup_success {
+  /* display: none; */
+  padding: 3rem;
+}
+
+.popup_success_content {
+  position: relative;
+  max-height: 100%;
+  background-color: var(--white-background);
+}
+
+.popup_success_title {
+  color: var(--brown-dark-color);
+}
+
+.popup_success_btn {
+  font-size: 1.5rem;
+  padding: 1rem;
+  background-color: var(--brown-color);
+  color: white;
 }
 
 /* Стили для секции с банером */
@@ -859,14 +887,8 @@ header {
 }
 
 .form_block {
-  box-sizing: border-box;
-  padding: 2rem;
   width: 48rem;
   background-color: var(--white-background);
-  border-radius: 20px;
-  display: flex;
-  flex-direction: column;
-  gap: 3rem;
 }
 
 .form_title {
