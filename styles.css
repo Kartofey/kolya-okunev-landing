@@ -71,10 +71,11 @@ label {
 
 .btn {
   font-family:inherit;
+  padding: 0.5rem 1rem;
+  min-width: 150px;
   border: none;
   border-radius: 8px;
   cursor: pointer;
-  padding: 0.5rem 1rem;
 }
 
 .btn:hover {
@@ -120,6 +121,22 @@ section {
   cursor: pointer;
 }
 /* Нужно докумекать вынос стилей, чтобы без дублей было */
+
+/* Стили для анимации загрузки */
+.loader {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 3px solid var(--text-grey-color);
+  border-top: 2px solid transparent;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
 
 /* Стили для header */
 header {
@@ -188,6 +205,7 @@ header {
   color: var(--white-background);
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 0.5rem;
 }
 
@@ -761,7 +779,7 @@ header {
 
 .reviews_btn {
   font-size: 1.25rem;
-  padding: 1rem
+  padding: 1rem;
 }
 
 /* Стили для секции "Фтогалерея" */
