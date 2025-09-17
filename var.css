@@ -21,6 +21,8 @@
   --input-border-color: rgb(209 213 219);
   --shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
   --shadow-big: 0 10px 20px rgba(0, 0, 0, 0.2);
+  --green-color: rgb(166, 198, 111);
+  --red-color-warm: rgb(206, 117, 117);
 
   /* Размеры */
   --header-height: 5rem; /* 80px */

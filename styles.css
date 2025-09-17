@@ -256,6 +256,7 @@ header {
   cursor: pointer;
 }
 
+/* Стили для popup заявки */
 .popup_form {
   display: none;
   padding: 3rem;
@@ -299,23 +300,38 @@ header {
   color: var(--brown-dark-color);
 }
 
+/* Стили для popup после отправки */
 .popup_success {
-  /* display: none; */
+  display: none;
   padding: 3rem;
 }
 
 .popup_success_content {
   position: relative;
   max-height: 100%;
+  display: flex;
+  align-items: center;
   background-color: var(--white-background);
 }
 
 .popup_success_title {
+  padding: 0 1rem;
   color: var(--brown-dark-color);
+}
+
+.popup_success_text {
+  font-family: 'Pacific Regular';
+  font-size: 1.5rem;
+  line-height: 1.5;
+  font-weight: 100;
+  text-align: center;
+  color: var(--text-grey-color);
+  background-color: var(--green-color);
 }
 
 .popup_success_btn {
   font-size: 1.5rem;
+  width: 100%;
   padding: 1rem;
   background-color: var(--brown-color);
   color: white;
@@ -1352,5 +1368,23 @@ header {
 
   .modal_links__list a {
     font-size: 1rem;
+  }
+
+  /* Стили для popup после отправки */
+  .popup_success {
+    padding: 2rem;
+  }
+
+  .popup_success_title {
+    font-size: 1.5rem;
+  }
+
+  .popup_success_text {
+    font-size: 1.3rem;
+    line-height: 1.4;
+  }
+
+  .popup_success_btn {
+    font-size: 1.4rem;
   }
 }
