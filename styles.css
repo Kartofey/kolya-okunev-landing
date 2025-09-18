@@ -674,6 +674,7 @@ header {
   color: var(--brown-dark-color);
   font-weight: 600;
   font-size: 1.3rem;
+  white-space: nowrap;
 }
 
 /* Стили для секции "Отзывы" */
@@ -1311,10 +1312,10 @@ header {
   .about_text p {
     font-size: 1rem;
   }
-  /* Тут нужно проработать, либо поменять размеры и  еденицы. Либо сделать кролл для планшета */
+
   /* Стили для секции "Почему я?" */ 
   .card_title {
-    font-size: 1.6vw;
+    font-size: 1rem;
   }
   
   .why_me_card p {
@@ -1323,48 +1324,114 @@ header {
 
   .why_me_cards{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 2rem;
   }
- 
-  /* Стили для секции "Почему я?" */
-  .review_card p {
-    font-size: 0.9rem;
+
+  .why_me_card_icon {
+    height: 3.5rem;
+    width: 3.5rem;
   }
 
+  .why_me_card_icon img {
+    height: 2.5rem;
+    width: 2.5rem;
+  }
+
+  .card_title {
+    font-size: 1rem;
+  }
+ 
+  /* Стили для секции "Отзывы" */
   .reviews_btn {
     font-size: 1.1rem;
-  }
-
-  .why_me_card p {
-    font-size: 0.9rem;
+    padding: 0.8rem;
   }
 
   /* Стили для секции "ФОС" */
-  .form_block {
-    width: 40rem;
-  }
-
   .form_btn {
     font-size: 1.1rem;
+    padding: 0.8rem;
   }
-
-  form {
-    gap: 1rem;
-  }
-
-  /*  Стили для секции "FAQ" */
-  .faq_answer {
-    font-size: 0.9rem;
-  }
-
+/* футер добить */
   /*  Стили для footer */
   .footer {
     padding: 2rem 2.5rem;
   }
 
+  .footer_about {
+    width: 30rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .footer_about p {
+    color: var(--white-background-opacity-min);
+  }
+
   .footer_logo {
+    color: var(--white-background);
     font-size: 1.5rem;
+  }
+
+  .footer_links {
+    display: flex;
+    gap: 1rem;
+  }
+
+  .footer_link {
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: var(--white-background-opacity-max);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+  }
+
+  .footer_links img {
+    width: 1.5rem;
+  }
+
+  .footer_contact {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .footer_contact__title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--white-background);
+  }
+
+  .footer_contact__content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .footer_contact__item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .footer_contact__item p {
+    color: var(--white-background);
+  }
+
+  .footer_item_icon {
+    width: 1rem;
+    height: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer_item_icon img {
+    width: 1rem;
   }
 }
 
