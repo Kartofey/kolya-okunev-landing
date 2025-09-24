@@ -27,4 +27,5 @@
   /* Размеры */
   --header-height: 5rem; /* 80px */
   --header-height-1024: 4rem;
+  --header-height-360: 3rem;
 }

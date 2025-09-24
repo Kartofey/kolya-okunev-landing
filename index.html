@@ -20,9 +20,12 @@
       <a href="#">FAQ</a>
     </nav>
     <div class="btn_wrapper">
-      <button class="contact btn">
+      <button id="contact" class="contact btn">
         <img src="./icons/phone_white.svg" alt="icon">
         <span>+7 (000) 123-45-67</span>
+      </button>
+      <button id="contact_mobile" class="contact btn">
+        <img src="./icons/phone_white.svg" alt="icon">
       </button>
       <div class="burger_btn">
         <span class="bar"></span>
@@ -48,7 +51,7 @@
   <!-- Popup форма заявки -->
   <div class="popup_form overlay">
     <div class="popup_form_content popup_and_form">
-      <div class="popup_form__close"></div>
+      <div class="popup_form__close close_btn"></div>
       <div class="popup_form_title section_title">Забронировать дату</div>
       <form action="/submit"  method="post">
         <div class="form_stroke">
