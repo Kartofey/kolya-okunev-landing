@@ -1468,9 +1468,10 @@ header {
 
   .close_btn {
     position: relative;
-    
-    top: 20px;
-    right: 0px;
+    margin-left: auto;
+    margin-bottom: 0.5rem;
+    top: 0;
+    right: 0;
   }
 
   /*Стили для header */
@@ -1518,9 +1519,18 @@ header {
     display: flex;
   }
 
-  /* .popup_form__close {
-    position: relative;
-  } */
+  .popup_form_content {
+    gap: 0;
+  }
+
+  .popup_form__close::before,
+  .popup_form__close::after {
+    height: 2px; 
+  }
+
+  .popup_form_title {
+    margin-bottom: 0.5rem;
+  }
 
   /* Стили для popup после отправки */
   .popup_success {
