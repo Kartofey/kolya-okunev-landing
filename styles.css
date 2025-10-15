@@ -120,7 +120,6 @@ section {
   right: 20px;
   cursor: pointer;
 }
-/* Нужно докумекать вынос стилей, чтобы без дублей было */
 
 /* Стили для анимации загрузки */
 .loader {
@@ -1392,11 +1391,9 @@ header {
     margin: 0;
   } */
 
-  /* form {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-  } */
+  form {
+    gap: 1rem;
+  }
 
   /* input, select {
     box-sizing: border-box;
@@ -1437,18 +1434,13 @@ header {
     margin-bottom: 0.5rem;
   } */
 
-  /* .btn {
-    font-family:inherit;
-    padding: 0.5rem 1rem;
-    min-width: 150px;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-  } */
+  .btn {
+    padding: 0.8rem 1rem;
+  }
 
-  /* section {
-    padding: 3rem 2.5rem;
-  } */
+  section {
+    padding: 2rem 2rem;
+  }
 
   .section_title {
     font-size: 1.6rem;
@@ -1515,10 +1507,6 @@ header {
   }
 
   /* Стили для popup заявки */
-  .popup_form {
-    display: flex;
-  }
-
   .popup_form_content {
     gap: 0;
   }
@@ -1534,7 +1522,15 @@ header {
 
   /* Стили для popup после отправки */
   .popup_success {
-    padding: 2rem;
+    padding: 1.5rem;
+  }
+
+  .popup_success_content {
+    padding: 1.5rem;
+  }
+
+  .popup_success_content > .popup_form__close {
+    margin-bottom: -1.5rem;
   }
 
   .popup_success_title {
@@ -1547,6 +1543,154 @@ header {
   }
 
   .popup_success_btn {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
   }
+
+  /* Стили для секции с банером */
+  /* .banner {
+    padding: 0;
+    background-color: var(--banner-background);
+    height: 100vh;
+    max-height: 700px;
+  } */
+
+  /* .hero-text {
+    position: absolute;
+    top: 3rem;
+    left: 3rem;
+    font-size: 2vw; 
+    color: var(--brown-dark-color);
+    opacity: 0.8;
+  } */
+
+  /* .square_1 {
+    position: absolute;
+    width: 20vw;
+    height: 20vw;
+    top: 5%;
+    left: 10%;
+    background-color: var(--brown-sqare-1-color);
+    opacity: 0.2;
+    border-radius: 40px;
+    transform: rotate(25deg);
+  } */
+
+  /* .square_2 {
+    position: absolute;
+    width: 18vw;
+    height: 18vw;
+    top: 15%;
+    right: 15%;
+    background-color: var(--brown-color);
+    opacity: 0.1;
+    border-radius: 30px;
+    transform: rotate(15deg);
+  } */
+
+  /* .square_3 {
+    position: absolute;
+    width: 30vw;
+    height: 30vw;
+    bottom: 20%;
+    left: 20%;
+    background-color: var(--brown-sqare-2-color);
+    opacity: 0.15;
+    border-radius: 50px;
+    transform: rotate(45deg);
+  } */
+
+  /* .square_4 {
+    position: absolute;
+    width: 25vw;
+    height: 25vw;
+    bottom: 10%;
+    right: 25%;
+    background-color: var(--brown-dark-color);
+    opacity: 0.1;
+    border-radius: 45px;
+    transform: rotate(35deg);
+  } */
+
+  /* .square_5 {
+    position: absolute;
+    width: 15vw;
+    height: 15vw;
+    top: 40%;
+    left: 30%;
+    background-color: var(--brown-color);
+    opacity: 0.15;
+    border-radius: 25px;
+    transform: rotate(60deg);
+  } */
+
+  /* .square_6 {
+    position: absolute;
+    width: 19vw;
+    height: 19vw;
+    top: 30%;
+    right: 35%;
+    background-color: var(--brown-sqare-2-color);
+    opacity: 0.2;
+    border-radius: 35px;
+    transform: rotate(25deg);
+  } */
+
+  /* .square_7 {
+    position: absolute;
+    width: 21vw;
+    height: 21vw;
+    bottom: 35%;
+    right: 15%;
+    background-color: var(--brown-sqare-1-color);
+    opacity: 0.15;
+    border-radius: 40px;
+    transform: rotate(15deg);
+  } */
+
+  /* .square_8 {
+    position: absolute;
+    width: 18vw;
+    height: 18vw;
+    bottom: 45%;
+    left: 15%;
+    background-color: var(--brown-dark-color);
+    opacity: 0.1;
+    border-radius: 30px;
+    transform: rotate(45deg);
+  } */
+
+  /* .main_wrapper {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  } */
+
+  /* .main_wrapper span{
+    position: absolute;
+    bottom: 20%;
+    color: var(--brown-dark-color);
+    opacity: 0.8;
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 8vw;
+  } */
+
+  /* .main_wrapper img{
+    position: absolute;
+    width: 70vw;
+    align-self: center;
+  } */
+
+  /* .banner_firstname {
+    left: 2%;
+    z-index: 0;
+  } */
+
+  /* .banner_secondname {
+    right: 2%;
+    z-index: 0;
+  } */
 }
