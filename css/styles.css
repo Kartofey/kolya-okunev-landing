@@ -493,7 +493,8 @@ header {
 
 .main_wrapper img{
   position: absolute;
-  width: 70vw;
+  width: 25vw;
+  bottom: 0;
   align-self: center;
 }
 
@@ -1549,7 +1550,7 @@ header {
 
   /* Стили для секции с банером */
   .banner {
-    max-height: 100vh;
+    height: calc(100vh - var(--header-height-360));
   }
 
   .hero-text {
@@ -1612,11 +1613,9 @@ header {
     font-size: 8vw;
   }
 
-  /* .main_wrapper img{
-    position: absolute;
+  .main_wrapper img{
     width: 70vw;
-    align-self: center;
-  } */
+  }
 
   /* .banner_firstname {
     left: 2%;
