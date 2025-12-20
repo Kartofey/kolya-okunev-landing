@@ -1390,11 +1390,9 @@ header {
     padding-top: var(--header-height-360);
   }
 
-  /* p {
-    line-height: 1.5rem;
-    opacity: 0.9;
-    margin: 0;
-  } */
+  p {
+    line-height: 1.1rem;
+  }
 
   form {
     gap: 1rem;
@@ -1451,12 +1449,9 @@ header {
     font-size: 1.6rem;
   }
 
-  /* .card {
-    box-sizing: border-box;
-    padding: 1.5rem;
-    border-radius: 20px;
-    box-shadow: var(--shadow);
-  } */
+  .card {
+    padding: 1.2rem;
+  }
 
   .popup_and_form {
     padding: 1rem;
@@ -1569,68 +1564,229 @@ header {
   .square_1 {
     width: 30vw;
     height: 30vw;
-    border-radius: 30px;
+    border-radius: 8.3vw;
   }
 
   .square_2 {
     width: 28vw;
     height: 28vw;
-    border-radius: 30px;
+    border-radius: 8.3vw;
   }
 
   .square_3 {
     width: 40vw;
     height: 40vw;
-    border-radius: 40px;
+    border-radius: 11vw;
   }
 
   .square_4 {
     width: 35vw;
     height: 35vw;
-    border-radius: 35px;
+    border-radius: 9.7vw;
   }
 
   .square_5 {
     width: 25vw;
     height: 25vw;
-    border-radius: 25px;
+    border-radius: 7vw;
   }
 
   .square_6 {
     width: 29vw;
     height: 29vw;
-    border-radius: 25px;
+    border-radius: 7vw;
   }
 
   .square_7 {
     width: 21vw;
     height: 21vw;
-    border-radius: 20px;
+    border-radius: 5.5vw;
   }
 
   .square_8 {
     width: 28vw;
     height: 28vw;
+    border-radius: 7vw;
+  }
+
+  .main_wrapper span {
+    font-size: 2.1rem;
+  }
+
+  .main_wrapper span:first-child {
+    bottom: 78%;
+  }
+
+  .main_wrapper span:last-child {
+    bottom: 71%;
+  }
+
+  .banner_firstname {
+    left: 12%;
+  }
+
+  .banner_secondname {
+    right: 13%;
+  }
+
+  .main_wrapper img {
+    width: 240px;
+    left: unset;
+    align-self: center;
+  }
+
+  /* Стили для секции с бегущей строкой */
+  .marquee_content {
+    min-width: 200%;
+    font-size: 5vw;
+    animation: marquee 15s linear infinite;
+  }
+
+  .bullet {
+    width: 1vw;
+    height: 1vw;
+  }
+
+  .set {
+    animation: marquee_double 15s linear infinite;
+    animation-delay: 7.5s;
+  }
+
+  /* Стили для секции "Обо мне" */
+  .about_title {
+    margin-bottom: 2rem;
+  }
+
+  .about_content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .avatar {
+    width: 10rem;
+    height: 10rem;
+  }
+
+  .about_text {
+    width: 100%;
+    padding: 1.5rem;
     border-radius: 25px;
   }
 
-  .main_wrapper span{
-    bottom: 40%;
-    font-weight: 700;
-    font-size: 8vw;
+  .about_text span {
+    font-size: 1.3rem;
   }
 
-  .main_wrapper img{
-    width: 70vw;
+  .about_text p {
+    font-size: 0.9rem;
   }
 
-  /* .banner_firstname {
-    left: 2%;
-    z-index: 0;
+  /* Стили для секции "Почему я?" */
+  .why_me_title {
+    margin-bottom: 2rem;
+  }
+
+  .why_me_title__text {
+    margin-bottom: 1.5rem;
+  }
+
+  .why_me_title__text p {
+    font-size: 0.9rem;
+  }
+
+  .why_me_card {
+    gap: 1rem;
+  }
+
+  .why_me_card_icon {
+    height: 3.5rem;
+    width: 3.5rem;
+  }
+
+  .why_me_card_icon img {
+    height: 2.5rem;
+    width: 2.5rem;
+  }
+
+  .card_title {
+    font-size: 1.1rem;
+  }
+
+  /* Стили для секции "Отзывы" */
+  .reviews_content {
+    gap: 2rem;
+  }
+
+  .review_card {
+    width: 250px;
+    gap: 0.5rem;
+  }
+
+  .review_card p {
+    font-size: 0.8rem;
+  }
+
+  /* .review_card__head {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
   } */
 
-  /* .banner_secondname {
-    right: 2%;
-    z-index: 0;
+  /* .review_card__avatar {
+    height: 3rem;
+    width: 3rem;
+    border-radius: 100%;
+    overflow: hidden;
+    display: flex;
+  } */
+
+  /* .review_card__avatar img {
+    object-fit: cover;
+    object-position: top;
+  } */
+
+  /* .review_card_title {
+    color: var(--brown-dark-color);
+    font-weight: 600;
+    font-size: 1rem;
+  } */
+
+  /* .review_card__title_content p {
+    font-size: 0.9rem;
+  } */
+
+  /* .review_card__stars img {
+    width: 1rem;
+  } */
+
+  /* .slider_btn {
+    position: absolute;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 100%;
+    background-color: var(--white-background);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: var(--shadow);
+    z-index: 10;
+  } */
+
+  /* .slider_left {
+    left: -20px;
+  } */
+
+  /* .slider_right {
+    right: -20px;
+  } */
+
+  /* .slider_btn img {
+    width: 24px;
+  } */
+
+  /* .reviews_btn {
+    font-size: 1.25rem;
+    padding: 1rem;
   } */
 }
