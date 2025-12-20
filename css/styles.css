@@ -493,6 +493,8 @@ header {
 .main_wrapper img {
   position: absolute;
   width: 33vw;
+  max-height: 85vh;
+  object-fit: contain;
   bottom: 0;
   left: 38%;
 }
@@ -733,9 +735,9 @@ header {
 .review_card__avatar {
   height: 3rem;
   width: 3rem;
+  display: flex;
   border-radius: 100%;
   overflow: hidden;
-  display: flex;
 }
 
 .review_card__avatar img {
@@ -1727,66 +1729,14 @@ header {
     font-size: 0.8rem;
   }
 
-  /* .review_card__head {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-  } */
+  /* Стили для секции "Фтогалерея" */
+  .gallery_content {
+    gap: 2rem;
+  }
 
-  /* .review_card__avatar {
-    height: 3rem;
-    width: 3rem;
-    border-radius: 100%;
-    overflow: hidden;
-    display: flex;
-  } */
-
-  /* .review_card__avatar img {
-    object-fit: cover;
-    object-position: top;
-  } */
-
-  /* .review_card_title {
-    color: var(--brown-dark-color);
-    font-weight: 600;
-    font-size: 1rem;
-  } */
-
-  /* .review_card__title_content p {
-    font-size: 0.9rem;
-  } */
-
-  /* .review_card__stars img {
-    width: 1rem;
-  } */
-
-  /* .slider_btn {
-    position: absolute;
-    width: 2.5rem;
-    height: 2.5rem;
-    border-radius: 100%;
-    background-color: var(--white-background);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: var(--shadow);
-    z-index: 10;
-  } */
-
-  /* .slider_left {
-    left: -20px;
-  } */
-
-  /* .slider_right {
-    right: -20px;
-  } */
-
-  /* .slider_btn img {
-    width: 24px;
-  } */
-
-  /* .reviews_btn {
-    font-size: 1.25rem;
-    padding: 1rem;
-  } */
+  .gallery_slider_card {
+    width: 17rem;
+    height: 17rem;
+    padding: 0;
+  }
 }
