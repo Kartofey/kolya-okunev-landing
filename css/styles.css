@@ -1400,45 +1400,6 @@ header {
     gap: 1rem;
   }
 
-  /* input, select {
-    box-sizing: border-box;
-    padding: 0.5rem 1rem;
-    border: 1px solid var(--input-border-color);
-    border-radius: 8px;
-    width: 100%;
-  } */
-
-  /* textarea {
-    box-sizing: border-box;
-    padding: 0.5rem 1rem;
-    border-radius: 8px;
-    border-color: var(--input-border-color);
-    width: 100%;
-    height: 8rem;
-  } */
-
-  /* a {
-    text-decoration: none;
-    font-family: inherit;
-    opacity: 0.9;
-  } */
-
-  /* input[type="checkbox"] {
-    width: 1.25rem;
-    height: 1.25rem;
-    cursor: pointer;
-    accent-color: var(--brown-color);
-  } */
-
-  /* label {
-    display: inline-block;
-    color: var(--text-grey-color);
-    opacity: 0.9;
-    font-size: 0.875rem;
-    font-weight: 500;
-    margin-bottom: 0.5rem;
-  } */
-
   .btn {
     padding: 0.8rem 1rem;
   }
@@ -1738,5 +1699,64 @@ header {
     width: 17rem;
     height: 17rem;
     padding: 0;
+  }
+
+  /* Стили для секции "Этапы подготовки" */
+  .steps_content {
+    gap: 2rem;
+  }
+
+  .steps_blocks {
+    width: 100%;
+    gap: 1.5rem;
+  }
+
+  /* Стили для секции "ФОС" */
+
+  .form_title {
+    font-size: 1.4rem;
+  }
+  .form_stroke {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  /* Стили для секции "FAQ" */
+  .faq_content {
+    gap: 2rem;
+  }
+
+  .faq_question {
+    padding: 1rem;
+  }
+
+  .faq_answer {
+    padding: 1rem;
+  }
+
+  .faq_toggle_icon {
+    width: 1rem;
+    height: 1rem;
+  }
+
+  /* Стили для footer */
+  .footer {
+    padding: 2rem;
+  }
+
+  .footer_content {
+    flex-direction: column;
+  }
+
+  .footer_about {
+    width: 100%;
+  }
+
+  .footer_logo {
+    font-size: 1.5rem;
+  }
+
+  .footer_contact {
+    width: 100%;
   }
 }
