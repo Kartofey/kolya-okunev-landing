@@ -168,7 +168,7 @@ header {
 
 .header_links a{
   font-weight: 500;
-  font-size: 1rem;
+  font-size: 1.2rem;
   color: var(--text-grey-color);
 }
 
@@ -487,16 +487,16 @@ header {
   opacity: 0.8;
   font-family: inherit;
   font-weight: 700;
-  font-size: 9vw;
+  font-size: 8vw;
 }
 
 .main_wrapper img {
   position: absolute;
-  width: 33vw;
+  width: 45vw;
   max-height: 85vh;
   object-fit: contain;
   bottom: 0;
-  left: 38%;
+  left: 33%;
 }
 
 .banner_firstname {
@@ -859,6 +859,7 @@ header {
 
 .steps_blocks {
   width: 60%;
+  max-width: 1200px;
   display: flex;
   flex-direction: column;
   gap: 2rem;
@@ -1166,7 +1167,7 @@ header {
   }
   
   .header_links a{
-    font-size: 0.9rem;
+    font-size: 1rem;
   }
   
   .contact {
@@ -1206,7 +1207,8 @@ header {
   }
   
   .about_text p {
-    font-size: 0.9rem;
+    font-size: 1rem;
+    line-height: 1.2rem;
   }
   
   /* Стили для секции "Почему я?" */  
@@ -1315,7 +1317,8 @@ header {
   }
   
   .about_text {
-    padding: 4vw;
+    padding: 3vw;
+    border-radius: 30px;
   }
   
   .about_text span {
@@ -1323,7 +1326,7 @@ header {
   }
   
   .about_text p {
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
 
   /* Стили для секции "Почему я?" */ 
@@ -1482,6 +1485,15 @@ header {
 
   .popup_form_title {
     margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+  }
+
+  .popup_form label {
+    font-size: 0.7rem;
+  }
+
+  .popup_form button {
+    padding: 0.7rem;
   }
 
   /* Стили для popup после отправки */
@@ -1783,6 +1795,7 @@ header {
 }
 
 @media (max-width: 359px) {
+  /* Стили для баннера */
   .main_wrapper span {
     font-size: calc(1.5rem + 2vw);
   }
@@ -1797,6 +1810,20 @@ header {
 
   .main_wrapper img {
     max-height: 65vh;
+  }
+
+   /* Стили для popup заявки */
+  .popup_form_title {
+    font-size: 1rem;
+  }
+
+  .popup_form label {
+    font-size: 0.6rem;
+  }
+
+  .popup_form button {
+    padding: 0.6rem;
+    font-size: 1rem;
   }
 }
 }
