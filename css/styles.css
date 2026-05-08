@@ -3,6 +3,10 @@
 @import url('fonts.css');
 
 /* Базовые стили */
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family:'Montserrat Regular', sans-serif;
   padding-top: var(--header-height);
