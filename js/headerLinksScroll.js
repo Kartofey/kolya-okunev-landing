@@ -15,7 +15,7 @@ function scrollToSection(header, targetElement) {
     });
 }
 
-export function initScrollByLink(header, links) {
+export function initScrollByLinks(header, links) {
 
     if(!header || !links) {
         console.warn('Scroll to section: header or links selector not provided')
@@ -36,6 +36,23 @@ export function initScrollByLink(header, links) {
 
                 scrollToSection(header, targetSection);
             }
+        })
+    })
+}
+
+export function scrollToTopByClickToLogo(logoSelector) {
+
+    if(!logoSelector) {
+        console.warn('Scroll to top: logo link selector not provided');
+        return
+    }
+
+    logoSelector.addEventListener('click', (e) => {
+        e.preventDefault();
+
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
         })
     })
 }
