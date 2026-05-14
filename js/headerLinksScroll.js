@@ -1,5 +1,5 @@
 function scrollToSection(header, targetElement) {
-    
+
     if(!header || !targetElement) {
         console.warn('Scroll to section: header or section selector not provided')
         return
@@ -15,7 +15,7 @@ function scrollToSection(header, targetElement) {
     });
 }
 
-function initScrollByLink(header, links) {
+export function initScrollByLink(header, links) {
 
     if(!header || !links) {
         console.warn('Scroll to section: header or links selector not provided')
@@ -23,9 +23,9 @@ function initScrollByLink(header, links) {
     }
 
     links.forEach(link => {
-        link.addEventListenner('click', (e) => {
+        link.addEventListener('click', (e) => {
 
-            const targetId = link.targetAttribute('href');
+            const targetId = link.getAttribute('href');
 
             if(!targetId || targetId == '#') return;
 

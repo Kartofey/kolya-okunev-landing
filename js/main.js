@@ -1,8 +1,8 @@
 import { headerLinks } from './dom-elements.js'
-import { initScrollByLinks } from './headerLinksScroll.js'
+import { initScrollByLink } from './headerLinksScroll.js'
 
 document.addEventListener('DOMContentLoaded', () => {
 
-    initScrollByLinks(headerLinks.header, headerLinks.headerLinks);
-    initScrollByLinks(headerLinks.header, headerLinks.headerLinksMobile);
+    initScrollByLink(headerLinks.header, headerLinks.headerLinks);
+    initScrollByLink(headerLinks.header, headerLinks.headerLinksMobile);
 })
