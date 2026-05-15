@@ -125,6 +125,10 @@ section {
   cursor: pointer;
 }
 
+.active {
+  display: flex;
+}
+
 /* Стили для анимации загрузки */
 .loader {
   width: 20px;
