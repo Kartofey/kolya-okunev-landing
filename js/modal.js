@@ -1,11 +1,19 @@
-export function openLinksModal(btnSelector, modal) {
+export function openModal(modalSelector) {
     
-    if(!btnSelector || !modal) {
-        console.warn('Open modal: contact btn or modal selector not provided')
+    if(!modalSelector) {
+        console.warn('Open modal: modal selector not provided')
         return
     }
 
-    btnSelector.addEventListener('click', (e) => {
-        
-    })
+    modalSelector.classList.add('active');
+}
+
+export function closeModal(modalSelector) {
+
+    if(!modalSelector) {
+        console.warn('Close modal: modal selector not provided')
+        return
+    }
+
+    modalSelector.classList.remove('active')
 }

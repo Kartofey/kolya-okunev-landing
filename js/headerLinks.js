@@ -1,17 +1,20 @@
-function scrollToPosition(targetPosition) {
+import { closeModal } from './modal.js'
 
-    if(!targetPosition && targetPosition != 0) {
-        console.warn('Scroll to position: position value not provided')
+export function scrollToTopByLogo(logoSelector) {
+
+    if(!logoSelector) {
+        console.warn('Scroll to top: logo link selector not provided');
         return
     }
 
-    window.scrollTo({
-        top: targetPosition,
-        behavior: 'smooth'
-    });
+    logoSelector.addEventListener('click', (e) => {
+        e.preventDefault();
+
+        window.scrollTo({ top: 0 });
+    })
 }
 
-export function initScrollToSectionByLinks(header, links) {
+export function scrollToSectionByHeaderLinks(header, links) {
 
     if(!header || !links) {
         console.warn('Scroll to section: header or links selector not provided')
@@ -32,22 +35,39 @@ export function initScrollToSectionByLinks(header, links) {
                 
                 const headerHeight = header.offsetHeight;
                 const targetPosition = targetSection.getBoundingClientRect().top + window.scrollY - headerHeight;
-                scrollToPosition(targetPosition);
+
+                window.scrollTo({ top: targetPosition });
             }
         })
     })
 }
 
-export function scrollToTopByLogo(logoSelector) {
+export function scrollToSectionFromBurgerMenu(header, links, modal) {
 
-    if(!logoSelector) {
-        console.warn('Scroll to top: logo link selector not provided');
+    if(!header || !links || !modal) {
+        console.warn('Scroll to section: header, links or modal selector not provided')
         return
     }
 
-    logoSelector.addEventListener('click', (e) => {
-        e.preventDefault();
+    links.forEach(link => {
+        link.addEventListener('click', (e) => {
+            
+            const targetId = link.getAttribute('href');
 
-        scrollToPosition(0);
+            if(!targetId || targetId == '#') return;
+
+            const targetSection = document.querySelector(targetId);
+
+            if(targetSection) {
+                e.preventDefault();
+
+                const headerHeight = header.offsetHeight;
+                const targetPosition = targetSection.getBoundingClientRect().top + window.scrollY - headerHeight;
+                
+                window.scrollTo({ top: targetPosition });
+                
+                closeModal();
+            }
+        })
     })
 }
