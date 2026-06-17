@@ -66,7 +66,7 @@ export function scrollToSectionFromBurgerMenu(header, links, modal) {
                 
                 window.scrollTo({ top: targetPosition });
                 
-                closeModal();
+                closeModal(modal);
             }
         })
     })

@@ -1,5 +1,6 @@
-import { headerLinks, btns } from './dom-elements.js'
+import { headerLinks, btns, modal } from './dom-elements.js'
 import { scrollToSectionByHeaderLinks, scrollToTopByLogo, scrollToSectionFromBurgerMenu } from './headerLinks.js'
+import { openBurgerMenu, openContactForm, closeContactForm, closeBurgerMenu } from './modal.js';
 
 document.addEventListener('DOMContentLoaded', () => {
 
@@ -9,5 +10,8 @@ document.addEventListener('DOMContentLoaded', () => {
     scrollToSectionFromBurgerMenu(headerLinks.header, headerLinks.headerLinksMobile);
 
     // Modal and popup acions
-    
+    openContactForm(btns.popupFormBtns, modal.popupForm);
+    closeContactForm(btns.popupFormCloseBtns, modal.popupForm);
+    openBurgerMenu(btns.burgerMenuBtn, modal.burgerMenuModal);
+    closeBurgerMenu(btns.burgerMenuCloseBtn, modal.burgerMenuModal);
 })
