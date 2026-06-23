@@ -51,7 +51,7 @@ export function scrollToSectionFromBurgerMenu(header, links, modal) {
 
     links.forEach(link => {
         link.addEventListener('click', (e) => {
-            
+            console.log(link)
             const targetId = link.getAttribute('href');
 
             if(!targetId || targetId == '#') return;

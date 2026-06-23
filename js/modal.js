@@ -43,6 +43,14 @@ export function closeContactForm(btns, modal) {
         return
     }
 
+    modal.addEventListener('click', (e) => {
+        e.preventDefault();
+
+        if(!modal.firstElementChild.contains(e.target)) {
+            closeModal(modal);
+        }
+    })
+
     btns.forEach(btn => {
         btn.addEventListener('click', (e) => {
             e.preventDefault();
@@ -72,6 +80,13 @@ export function closeBurgerMenu(btn, modal) {
         console.warn('Close modal: btn or modal selector not provided')
         return
     }
+
+    modal.addEventListener('click', (e) => {
+
+        if(!modal.firstElementChild.contains(e.target)) {
+            closeModal(modal);
+        }
+    })
 
     btn.addEventListener('click', (e) => {
         e.preventDefault();

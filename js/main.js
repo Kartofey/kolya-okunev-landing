@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Header links actions
     scrollToTopByLogo(headerLinks.logo)
     scrollToSectionByHeaderLinks(headerLinks.header, headerLinks.headerLinks);
-    scrollToSectionFromBurgerMenu(headerLinks.header, headerLinks.headerLinksMobile);
+    scrollToSectionFromBurgerMenu(headerLinks.header, headerLinks.headerLinksMobile, modal.burgerMenuModal);
 
     // Modal and popup acions
     openContactForm(btns.popupFormBtns, modal.popupForm);
